@@ -44,7 +44,6 @@ public class CompositeTriangle implements Iterable<Triangle>{
                 t.add(temp);
             }
         }
-        System.out.println(t);
         return t.iterator();
     }
 

@@ -28,8 +28,11 @@ public class Triangle {
         return z;
     }
 
-
-    public boolean equals(Triangle t){
+    //Hier Override und Object o, da Java sonst beim Test eine eigene equals methode benutzt, welche den test nicht durchlaufen lässt,
+    //da diese die Objekt IDs vergleicht und nicht die Werte darin
+    @Override
+    public boolean equals(Object o){
+        Triangle t = (Triangle) o;
         if(x == t.getX() && y == t.getY() && z == t.getZ()){
             return true;
         }

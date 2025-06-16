@@ -4,7 +4,7 @@ public class Main {
         System.out.println("Hello, World!");
         CompositeTriangle t = new CompositeTriangle(-2,4,3);
         for(Triangle g: t){
-            System.out.println("");
+            System.out.println(g);
         }
     }
 }
